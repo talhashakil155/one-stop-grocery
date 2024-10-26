@@ -19,6 +19,7 @@ module.exports = {
       'localhost',
       '127.0.0.1',
       'i.pravatar.cc',
+      'drive.google.com',
     ],
   },
   ...(process.env.FRAMEWORK_PROVIDER === 'graphql' && {

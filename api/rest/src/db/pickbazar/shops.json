@@ -2,7 +2,7 @@
   {
     "id": 11,
     "owner_id": 1,
-    "name": "Medicine",
+    "name": "Essendon",
     "slug": "medicine",
     "description": null,
     "cover_image": {
@@ -69,7 +69,7 @@
   {
     "id": 9,
     "owner_id": 1,
-    "name": "Gadget",
+    "name": "Casey",
     "slug": "gadget",
     "description": "The Gadget shop is the best shop in the city. This is being run under the store owner and our aim is to provide quality product and hassle-free customer service.",
     "cover_image": {
@@ -136,7 +136,7 @@
   {
     "id": 7,
     "owner_id": 1,
-    "name": "Books Shop",
+    "name": "Chirnside",
     "slug": "books-shop",
     "description": "This is the book shop. All the publications sells their book under this book shop",
     "cover_image": {
@@ -201,7 +201,7 @@
   {
     "id": 6,
     "owner_id": 1,
-    "name": "Grocery Shop",
+    "name": "Cranbourne",
     "slug": "grocery-shop",
     "description": "The grocery shop is the best shop around the city. This is being run under the store owner and our aim is to provide fresh and quality product and hassle free customer service.",
     "cover_image": {
@@ -286,7 +286,7 @@
   {
     "id": 5,
     "owner_id": 1,
-    "name": "Bakery Shop",
+    "name": "Dandenong",
     "slug": "bakery-shop",
     "description": "The bakery shop is the best shop around the city. This is being run under the store owner and our aim is to provide fresh and quality product and hassle free customer service.",
     "cover_image": {
@@ -364,7 +364,7 @@
   {
     "id": 4,
     "owner_id": 1,
-    "name": "Makeup Shop",
+    "name": "Mernda",
     "slug": "makeup-shop",
     "description": "The makeup shop is the best shop around the city. This is being run under the store owner and our aim is to provide quality product and hassle free customer service.",
     "cover_image": {
@@ -444,7 +444,7 @@
   {
     "id": 3,
     "owner_id": 1,
-    "name": "Bags Shop",
+    "name": "Oakleigh",
     "slug": "bags-shop",
     "description": "The Bag shop is the best shop around the city. This is being run under the store owner and our aim is to provide quality product and hassle free customer service.",
     "cover_image": {
@@ -526,7 +526,7 @@
   {
     "id": 2,
     "owner_id": 1,
-    "name": "Clothing Shop",
+    "name": "Parkmore",
     "slug": "clothing-shop",
     "description": "The clothing shop is the best shop around the city. This is being run under the store owner and our aim is to provide quality product and hassle free customer service.",
     "cover_image": {
@@ -603,7 +603,7 @@
   {
     "id": 1,
     "owner_id": 1,
-    "name": "Furniture Shop",
+    "name": "Point Cook",
     "slug": "furniture-shop",
     "description": "The furniture shop is the best shop around the city. This is being run under the store owner and our aim is to provide quality product and hassle free customer service.",
     "cover_image": {

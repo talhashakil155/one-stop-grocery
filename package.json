@@ -3,7 +3,7 @@
   "version": "11.8.0",
   "license": "MIT",
   "private": true,
-  "author": "RedQ",
+  "author": "Codylio",
   "workspaces": [
     "admin/*",
     "shop"

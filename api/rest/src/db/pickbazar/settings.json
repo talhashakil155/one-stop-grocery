@@ -44,21 +44,21 @@
       "twitterCardType": null
     },
     "logo": {
-      "thumbnail": "https://pickbazarlaravel.s3.ap-southeast-1.amazonaws.com/2295/conversions/Logo-new-thumbnail.jpg",
-      "original": "https://pickbazarlaravel.s3.ap-southeast-1.amazonaws.com/2295/Logo-new.png",
+      "thumbnail": "https://drive.google.com/thumbnail?id=11XeH3reIifyUMPD1Mgyx58P2NaTR6PBa",
+      "original": "https://drive.google.com/thumbnail?id=11XeH3reIifyUMPD1Mgyx58P2NaTR6PBa",
       "id": 2298,
       "file_name": "Logo-new.png"
     },
     "collapseLogo": {
-      "thumbnail": "https://pickbazarlaravel.s3.ap-southeast-1.amazonaws.com/2283/conversions/Pickbazar-thumbnail.jpg",
-      "original": "https://pickbazarlaravel.s3.ap-southeast-1.amazonaws.com/2283/Pickbazar.png",
+      "thumbnail": "https://drive.google.com/thumbnail?id=137pdxC4dXhOFBtl_uz0VvhX8vZ_pVwLE",
+      "original": "https://drive.google.com/thumbnail?id=137pdxC4dXhOFBtl_uz0VvhX8vZ_pVwLE",
       "id": 2286,
       "file_name": "Pickbazar.png"
     },
     "useOtp": false,
     "currency": "USD",
     "taxClass": "1",
-    "siteTitle": "Pickbazar",
+    "siteTitle": "Market Place Fresh",
     "freeShipping": false,
     "signupPoints": 100,
     "siteSubtitle": "Your next ecommerce",
@@ -122,8 +122,8 @@
     "maxShopDistance": null,
     "siteLink": "https://pickbazar.redq.io",
     "copyrightText": "Copyright \u00a9 REDQ. All rights reserved worldwide.",
-    "externalText": "REDQ",
-    "externalLink": "https://redq.io",
+    "externalText": "Codylio",
+    "externalLink": "https://www.codylio.com",
     "smsEvent": {
       "admin": {
         "statusChangeOrder": false,
