@@ -83,7 +83,7 @@
       "name": "Grocery",
       "settings": {
         "isHome": false,
-        "productCard": "helium",
+        "productCard": "neon",
         "layoutType": "classic"
       },
       "slug": "grocery",
@@ -270,7 +270,7 @@
       "name": "Grocery",
       "settings": {
         "isHome": false,
-        "productCard": "helium",
+        "productCard": "neon",
         "layoutType": "classic"
       },
       "slug": "grocery",
@@ -452,7 +452,7 @@
       "name": "Grocery",
       "settings": {
         "isHome": false,
-        "productCard": "helium",
+        "productCard": "neon",
         "layoutType": "classic"
       },
       "slug": "grocery",
@@ -639,7 +639,7 @@
       "name": "Grocery",
       "settings": {
         "isHome": false,
-        "productCard": "helium",
+        "productCard": "neon",
         "layoutType": "classic"
       },
       "slug": "grocery",
@@ -1360,7 +1360,7 @@
       "name": "Grocery",
       "settings": {
         "isHome": false,
-        "productCard": "helium",
+        "productCard": "neon",
         "layoutType": "classic"
       },
       "slug": "grocery",
@@ -1540,7 +1540,7 @@
       "settings": {
         "isHome": false,
         "layoutType": "classic",
-        "productCard": "helium"
+        "productCard": "neon"
       },
       "slug": "makeup",
       "language": "en",

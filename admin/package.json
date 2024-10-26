@@ -2,7 +2,7 @@
   "name": "marvel-admin",
   "version": "11.8.0",
   "private": true,
-  "author": "RedQ",
+  "author": "Codylio",
   "workspaces": [
     "rest",
     "graphql"

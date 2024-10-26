@@ -47,7 +47,7 @@
     ],
     "settings": {
       "isHome": false,
-      "productCard": "helium",
+      "productCard": "neon",
       "layoutType": "classic"
     },
     "icon": "FruitsVegetable"
@@ -128,7 +128,7 @@
     "settings": {
       "isHome": false,
       "layoutType": "classic",
-      "productCard": "helium"
+      "productCard": "neon"
     },
     "icon": "FacialCare"
   },
@@ -181,7 +181,7 @@
     "settings": {
       "isHome": false,
       "layoutType": "classic",
-      "productCard": "helium"
+      "productCard": "neon"
     },
     "icon": "Handbag"
   },
@@ -234,7 +234,7 @@
     "settings": {
       "isHome": false,
       "layoutType": "classic",
-      "productCard": "xenon"
+      "productCard": "neon"
     },
     "icon": "DressIcon"
   },
@@ -450,7 +450,7 @@
     ],
     "settings": {
       "isHome": false,
-      "productCard": "xenon",
+      "productCard": "neon",
       "layoutType": "classic"
     },
     "icon": "MedicineIcon"
