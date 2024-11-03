@@ -56,7 +56,7 @@ const ReviewModal = () => {
                   className="absolute rounded-full border border-accent"
                   style={{
                     background:
-                      'linear-gradient(90deg, rgba(0, 159, 127, 0.2) 0%, rgba(1, 147, 118, 0.2) 100%)',
+                      'linear-gradient(90deg, rgba(194, 23, 96, 0.2) 0%, rgba(1, 147, 118, 0.2) 100%)',
                     width: `${100 + i * 50}%`,
                     height: `${100 + i * 50}%`,
                     zIndex: 4 - i,

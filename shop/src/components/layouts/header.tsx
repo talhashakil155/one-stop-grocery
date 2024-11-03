@@ -41,7 +41,7 @@ const Header = ({ layout }: { layout?: string }) => {
   const { show, hideHeaderSearch } = useHeaderSearch();
   const [_, setDrawerView] = useAtom(drawerAtom);
   const [displayMobileHeaderSearch, setDisplayMobileHeaderSearch] = useAtom(
-    displayMobileHeaderSearchAtom
+    displayMobileHeaderSearchAtom,
   );
   const [isAuthorize] = useAtom(authorizationAtom);
   const [openDropdown, setOpenDropdown] = useState(false);
@@ -56,7 +56,7 @@ const Header = ({ layout }: { layout?: string }) => {
   // }, [isHomePage]);
   const isFlattenHeader = useMemo(
     () => !show && isHomePage && layout !== 'modern',
-    [show, isHomePage, layout]
+    [show, isHomePage, layout],
   );
 
   function handleSidebar(view: string) {
