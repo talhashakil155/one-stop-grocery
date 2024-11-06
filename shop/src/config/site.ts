@@ -56,10 +56,6 @@ export const siteSettings = {
       label: 'profile-sidebar-orders',
     },
     {
-      href: Routes.downloads,
-      label: 'profile-sidebar-downloads',
-    },
-    {
       href: Routes.wishlists,
       label: 'profile-sidebar-my-wishlist',
     },
@@ -70,10 +66,6 @@ export const siteSettings = {
     {
       href: Routes.refunds,
       label: 'text-my-refunds',
-    },
-    {
-      href: Routes.reports,
-      label: 'profile-sidebar-my-reports',
     },
     {
       href: Routes.cards,

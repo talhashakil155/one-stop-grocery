@@ -17,7 +17,7 @@ export const siteSettings = {
     height: 34,
   },
   collapseLogo: {
-    url: '/collapse-logo.svg',
+    url: '/collapse-logo.png',
     alt: 'P',
     href: '/',
     width: 32,

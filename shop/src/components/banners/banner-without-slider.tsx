@@ -47,9 +47,6 @@ const BannerWithoutSlider: React.FC<BannerProps> = ({ banners, layout }) => {
           >
             {banners![0]?.title}
           </h1>
-          <p className="text-sm text-body md:text-base xl:text-lg">
-            {banners![0]?.description}
-          </p>
           <div className="w-full max-w-3xl">
             <SearchWithSuggestion
               label="search"
