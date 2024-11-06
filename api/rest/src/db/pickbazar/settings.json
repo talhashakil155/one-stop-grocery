@@ -44,51 +44,34 @@
       "twitterCardType": null
     },
     "logo": {
-      "thumbnail": "https://drive.google.com/thumbnail?id=11XeH3reIifyUMPD1Mgyx58P2NaTR6PBa",
-      "original": "https://drive.google.com/thumbnail?id=11XeH3reIifyUMPD1Mgyx58P2NaTR6PBa",
+      "thumbnail": "https://drive.google.com/thumbnail?id=1iwRgvu95OLpu5_Ys0X7QXPvEv3s6alBX",
+      "original": "https://drive.google.com/thumbnail?id=1iwRgvu95OLpu5_Ys0X7QXPvEv3s6alBX",
       "id": 2298,
       "file_name": "Logo-new.png"
     },
     "collapseLogo": {
-      "thumbnail": "https://drive.google.com/thumbnail?id=137pdxC4dXhOFBtl_uz0VvhX8vZ_pVwLE",
-      "original": "https://drive.google.com/thumbnail?id=137pdxC4dXhOFBtl_uz0VvhX8vZ_pVwLE",
+      "thumbnail": "https://drive.google.com/thumbnail?id=1jd8Ldg2aI_oap8W56QwBexCiuia4IZNP",
+      "original": "https://drive.google.com/thumbnail?id=1jd8Ldg2aI_oap8W56QwBexCiuia4IZNP",
       "id": 2286,
       "file_name": "Pickbazar.png"
     },
     "useOtp": false,
     "currency": "USD",
     "taxClass": "1",
-    "siteTitle": "Market Place Fresh",
+    "siteTitle": "One Stop Grocery",
     "freeShipping": false,
     "signupPoints": 100,
     "siteSubtitle": "Your next ecommerce",
     "shippingClass": "1",
     "contactDetails": {
-      "contact": "+129290122122",
-      "socials": [
-        {
-          "url": "https://www.facebook.com/redqinc",
-          "icon": "FacebookIcon"
-        },
-        {
-          "url": "https://twitter.com/RedqTeam",
-          "icon": "TwitterIcon"
-        },
-        {
-          "url": "https://www.instagram.com/redqteam",
-          "icon": "InstagramIcon"
-        }
-      ],
-      "website": "https://redq.io",
-      "emailAddress": "demo@demo.com",
+      "website": "https://codylio.com",
+      "emailAddress": "onestopgrocery.com",
       "location": {
-        "lat": 42.9585979,
-        "lng": -76.9087202,
         "zip": null,
         "city": null,
-        "state": "NY",
-        "country": "United States",
-        "formattedAddress": "NY State Thruway, New York, USA"
+        "state": "Wellington",
+        "country": "New Zealand",
+        "formattedAddress": "Wellington, New Zealand"
       }
     },
     "paymentGateway": [
@@ -101,14 +84,14 @@
       "formation": "en-US",
       "fractions": 2
     },
-    "useEnableGateway": false,
+    "useEnableGateway": true,
     "useCashOnDelivery": true,
     "freeShippingAmount": 0,
     "minimumOrderAmount": 0,
     "useMustVerifyEmail": false,
     "maximumQuestionLimit": 5,
     "currencyToWalletRatio": 3,
-    "StripeCardOnly": false,
+    "StripeCardOnly": true,
     "guestCheckout": true,
     "server_info": {
       "upload_max_filesize": 2048,
@@ -121,7 +104,7 @@
     "defaultAi": "openai",
     "maxShopDistance": null,
     "siteLink": "https://pickbazar.redq.io",
-    "copyrightText": "Copyright \u00a9 REDQ. All rights reserved worldwide.",
+    "copyrightText": "Powered By",
     "externalText": "Codylio",
     "externalLink": "https://www.codylio.com",
     "smsEvent": {

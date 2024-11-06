@@ -53,16 +53,6 @@ export const ContactPage = () => {
               </span>
             </div>
 
-            <div className="mb-8 flex flex-col">
-              <span className="mb-3 font-semibold text-heading">
-                {t('text-phone')}
-              </span>
-              <span className="text-sm text-body">
-                {settings?.contactDetails?.contact
-                  ? settings?.contactDetails?.contact
-                  : t('text-no-contact')}
-              </span>
-            </div>
 
             <div className="mb-8 flex flex-col">
               <span className="mb-3 font-semibold text-heading">
@@ -95,36 +85,6 @@ export const ContactPage = () => {
               </div>
             )}
 
-            <div className="mb-8 flex flex-col">
-              <span className="mb-4 font-semibold text-heading">
-                {t('text-follow-us')}
-              </span>
-              <div className="flex items-center justify-start">
-                {settings?.contactDetails?.socials?.map(
-                  (item: any, index: number) =>
-                    item?.url ? (
-                      <Link
-                        key={index}
-                        href={item?.url}
-                        target="_blank"
-                        title={item?.url}
-                        // rel="noreferrer"
-                        className={`text-muted transition-colors duration-300 focus:outline-none ltr:mr-8 ltr:last:mr-0 rtl:ml-8 rtl:last:ml-0 hover:${item.hoverClass}`}
-                      >
-                        {getIcon({
-                          iconList: socialIcons,
-                          iconName: isObject(item?.icon)
-                            ? item?.icon?.value
-                            : item?.icon,
-                          className: 'w-4 h-4',
-                        })}
-                      </Link>
-                    ) : (
-                      ''
-                    )
-                )}
-              </div>
-            </div>
           </div>
 
           {/* Contact form */}

@@ -8,13 +8,13 @@
     "banners": [
       {
         "id": 54,
-        "title": "Groceries Delivered in 90 Minute",
+        "title": "From our shelves to your kitchen",
         "type_id": 1,
         "description": "Get your healthy foods & snacks delivered at your doorsteps all day everyday",
         "image": {
           "id": 907,
           "thumbnail": "https://pickbazarlaravel.s3.ap-southeast-1.amazonaws.com/904/conversions/grocery-thumbnail.jpg",
-          "original": "https://pickbazarlaravel.s3.ap-southeast-1.amazonaws.com/904/grocery.png"
+          "original": "/img/cover-images/1 grocery.png"
         }
       }
     ],
@@ -61,12 +61,12 @@
     "banners": [
       {
         "id": 13,
-        "title": "Get Your Bakery Items Delivered",
+        "title": "Home-Baked Freshness, Every Day!",
         "type_id": 2,
         "description": "Get your favorite bakery items baked and delivered to your doorsteps at any time",
         "image": {
           "id": 908,
-          "original": "https://pickbazarlaravel.s3.ap-southeast-1.amazonaws.com/905/bakery.jpg",
+          "original": "/img/cover-images/bakery.png",
           "thumbnail": "https://pickbazarlaravel.s3.ap-southeast-1.amazonaws.com/905/conversions/bakery-thumbnail.jpg"
         }
       }
@@ -74,7 +74,7 @@
     "promotional_sliders": null,
     "settings": {
       "isHome": false,
-      "layoutType": "standard",
+      "layoutType": "classic",
       "productCard": "argon"
     },
     "icon": "Bakery"
@@ -88,12 +88,12 @@
     "banners": [
       {
         "id": 14,
-        "title": "Branded & imported makeups",
+        "title": "Fresh groceries at your door, faster than ever!",
         "type_id": 3,
         "description": "Easiest and cheapest way to get your branded & imported makeups",
         "image": {
           "id": 909,
-          "original": "https://pickbazarlaravel.s3.ap-southeast-1.amazonaws.com/906/makeup.png",
+          "original": "/img/cover-images/3grocery.png",
           "thumbnail": "https://pickbazarlaravel.s3.ap-southeast-1.amazonaws.com/906/conversions/makeup-thumbnail.jpg"
         }
       }
@@ -141,12 +141,12 @@
     "banners": [
       {
         "id": 15,
-        "title": "Exclusive Branded bags",
+        "title": "From cart to kitchen in 90 minutes or less!",
         "type_id": 4,
         "description": "Get your exclusive & branded bags delivered to you in no time",
         "image": {
           "id": 910,
-          "original": "https://pickbazarlaravel.s3.ap-southeast-1.amazonaws.com/907/bags.png",
+          "original": "/img/cover-images/2 grocery.png",
           "thumbnail": "https://pickbazarlaravel.s3.ap-southeast-1.amazonaws.com/907/conversions/bags-thumbnail.jpg"
         }
       }
@@ -194,12 +194,12 @@
     "banners": [
       {
         "id": 16,
-        "title": "Shop your designer dresses",
+        "title": "Where freshness meets your family!",
         "type_id": 5,
         "description": "Ready to wear dresses tailored for you online. Hurry up while stock lasts.",
         "image": {
           "id": 911,
-          "original": "https://pickbazarlaravel.s3.ap-southeast-1.amazonaws.com/908/cloths.png",
+          "original": "/img/cover-images/4grocery.png",
           "thumbnail": "https://pickbazarlaravel.s3.ap-southeast-1.amazonaws.com/908/conversions/cloths-thumbnail.jpg"
         }
       }

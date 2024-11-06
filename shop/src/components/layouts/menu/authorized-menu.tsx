@@ -29,7 +29,8 @@ const AuthorizedMenu: React.FC<{ minimal?: boolean }> = ({ minimal }) => {
           <UserOutlinedIcon className="h-5 w-5" />
         ) : (
           <Avatar
-            src={me?.profile?.avatar?.thumbnail ?? avatarPlaceholder}
+            // src={me?.profile?.avatar?.thumbnail ?? avatarPlaceholder}
+            src = "/img/cover-images/me-avatar.png"
             title="user name"
             className="h-[38px] w-[38px] border-border-200"
           />
