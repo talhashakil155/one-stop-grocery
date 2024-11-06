@@ -27,10 +27,10 @@ export const privacyPolicy = {
       title: 'policy-five-title',
       description: 'policy-five-description',
     },
-    {
-      id: '6',
-      title: 'policy-six-title',
-      description: 'policy-six-description',
-    },
+    // {
+    //   id: '6',
+    //   title: 'policy-six-title',
+    //   description: 'policy-six-description',
+    // },
   ],
 };

@@ -101,20 +101,7 @@ export const siteSettings = {
     play_store_link: '/',
     app_store_link: '/',
   },
-  headerLinks: [
-    { href: Routes.coupons, icon: null, label: 'nav-menu-offer' },
-    { href: Routes.contactUs, label: 'nav-menu-contact' },
-    { href: Routes.flashSale, label: 'nav-menu-flash-sale' },
-    { href: Routes.manufacturers, label: 'text-manufacturers' },
-    { href: Routes.authors, label: 'text-authors' },
-    { href: Routes.help, label: 'nav-menu-faq' },
-    { href: Routes.terms, label: 'nav-menu-terms' },
-    { href: Routes.customerRefundPolicies, label: 'nav-menu-refund-policy' },
-    {
-      href: Routes.vendorRefundPolicies,
-      label: 'nav-menu-vendor-refund-policy',
-    },
-  ],
+  headerLinks: [{ href: Routes.contactUs, label: 'nav-menu-contact' }],
   footer: {
     // copyright: {
     //   name: 'RedQ, Inc',
@@ -124,27 +111,27 @@ export const siteSettings = {
     // email: 'dummy@dummy.com',
     // phone: '+1 256-698-0694',
     menus: [
-      {
-        title: 'text-explore',
-        links: [
-          {
-            name: 'Shops',
-            href: Routes.shops,
-          },
-          {
-            name: 'Authors',
-            href: Routes.authors,
-          },
-          {
-            name: 'Flash Deals',
-            href: Routes?.flashSale,
-          },
-          {
-            name: 'Coupon',
-            href: Routes.coupons,
-          },
-        ],
-      },
+      // {
+      //   title: 'text-explore',
+      //   links: [
+      //     {
+      //       name: 'Shops',
+      //       href: Routes.shops,
+      //     },
+      //     {
+      //       name: 'Authors',
+      //       href: Routes.authors,
+      //     },
+      //     {
+      //       name: 'Flash Deals',
+      //       href: Routes?.flashSale,
+      //     },
+      //     {
+      //       name: 'Coupon',
+      //       href: Routes.coupons,
+      //     },
+      //   ],
+      // },
       {
         title: 'text-customer-service',
         links: [
@@ -165,10 +152,10 @@ export const siteSettings = {
       {
         title: 'text-our-information',
         links: [
-          {
-            name: 'Manufacturers',
-            href: Routes?.manufacturers,
-          },
+          // {
+          //   name: 'Manufacturers',
+          //   href: Routes?.manufacturers,
+          // },
           {
             name: 'Privacy policies',
             href: Routes.privacy,
