@@ -29,7 +29,7 @@ import GroupsDropdownMenu from './menu/groups-menu';
 import StaticMenu from './menu/static-menu';
 const CartCounterIconButton = dynamic(
   () => import('@/components/cart/cart-counter-icon-button'),
-  { ssr: false }
+  { ssr: false },
 );
 const AuthorizedMenu = dynamic(() => import('./menu/authorized-menu'), {
   ssr: false,
@@ -42,7 +42,7 @@ const HeaderMinimal = ({ layout }: { layout: string }) => {
   const { t } = useTranslation('common');
   const [_, setDrawerView] = useAtom(drawerAtom);
   const [displayMobileHeaderSearch, setDisplayMobileHeaderSearch] = useAtom(
-    displayMobileHeaderSearchAtom
+    displayMobileHeaderSearchAtom,
   );
   const [isAuthorize] = useAtom(authorizationAtom);
 
@@ -176,13 +176,13 @@ const HeaderMinimal = ({ layout }: { layout: string }) => {
               <div className="hidden lg:inline-flex">
                 {isAuthorize ? <AuthorizedMenu /> : <JoinButton />}
               </div>
-              <Link
+              {/* <Link
                 href={`${process.env.NEXT_PUBLIC_ADMIN_URL}/register`}
                 variant="button"
                 target="_blank"
               >
                 {t('text-become-seller')}
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
