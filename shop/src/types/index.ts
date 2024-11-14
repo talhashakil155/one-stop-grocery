@@ -269,6 +269,7 @@ export interface Product {
     url: string;
   }[];
   in_flash_sale: boolean;
+  total_price: number;
 }
 
 export interface RatingCount {

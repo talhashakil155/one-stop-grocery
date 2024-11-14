@@ -1,0 +1,16 @@
+[
+  {
+    "id": 2,
+    "name": "Baby Spinach",
+    "slug": "baby-spinach",
+    "unit": "2Pfund",
+    "is_digital": 0,
+    "image": "https://pickbazarlaravel.s3.ap-southeast-1.amazonaws.com/2/conversions/BabySpinach-thumbnail.jpg",
+    "stock": 10,
+    "price": 0.6,
+    "language": "en",
+    "shop_id": 6,
+    "quantity": 3,
+    "itemTotal": 1.7999999999999998
+  }
+]

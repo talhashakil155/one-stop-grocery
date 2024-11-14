@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import dayjs from 'dayjs';
 import Link from '@/components/ui/link';
 import usePrice from '@/lib/use-price';
@@ -17,6 +16,8 @@ import { OrderStatus, PaymentStatus, RefundStatus } from '@/types';
 import { HomeIconNew } from '@/components/icons/home-icon-new';
 import OrderViewHeader from './order-view-header';
 import OrderStatusProgressBox from '@/components/orders/order-status-progress-box';
+import { Product } from '@/types';
+import { useCallback, useEffect, useState } from 'react';
 
 function OrderView({ order, language, settings, loadingStatus }: any) {
   const { t } = useTranslation('common');
@@ -29,16 +30,16 @@ function OrderView({ order, language, settings, loadingStatus }: any) {
     resetCheckout();
   }, [resetCart, resetCheckout]);
 
-  const { price: total } = usePrice({ amount: order?.paid_total! });
+  // const { price: total } = usePrice({ amount: order?.paid_total! });
   const { price: wallet_total } = usePrice({
     amount: order?.wallet_point?.amount! ?? 0,
   });
-  const { price: sub_total } = usePrice({ amount: order?.amount! });
-  const { price: shipping_charge } = usePrice({
-    amount: order?.delivery_fee ?? 0,
-  });
-  const { price: tax } = usePrice({ amount: order?.sales_tax ?? 0 });
-  const { price: discount } = usePrice({ amount: order?.discount ?? 0 });
+  // const { price: sub_total } = usePrice({ amount: order?.amount! });
+  // const { price: shipping_charge } = usePrice({
+  //   amount: order?.delivery_fee ?? 0,
+  // });
+  // const { price: tax } = usePrice({ amount: order?.sales_tax ?? 0 });
+  // const { price: discount } = usePrice({ amount: order?.discount ?? 0 });
 
   const amountPayable: number =
     order?.payment_status !== PaymentStatus.SUCCESS
@@ -46,6 +47,55 @@ function OrderView({ order, language, settings, loadingStatus }: any) {
       : 0;
 
   const { price: amountDue } = usePrice({ amount: amountPayable });
+
+
+
+  const [cartLength, setCartLength] = useState(0)
+  const [tempsubtotal1, setTempSubTotal1] = useState(0)
+
+  const [tempsubtotal, setTempSubTotal] = useState("")
+  const [tempTotal, setTotal] = useState("")
+
+
+  const { price: shipping_charge } = usePrice({ amount: 12 });
+  const { price: tax } = usePrice({ amount: 0.29 });
+  const { price: discount } = usePrice({ amount: 0 });
+
+
+  const { price: subtotal } = usePrice({ amount: Number(tempsubtotal1) });
+  const { price: total } = usePrice({ amount: Number(tempsubtotal1) + 12 + 0.29 });
+
+
+  const loadCartFromFile = useCallback(async () => {
+    console.log("inside loadCartFromFile")
+
+    const response = await fetch('/api/cart/load-cart');
+    const cartItems = await response.json();
+    setCartLength(cartItems.length)
+    
+    const productsFromCartFile = await cartItems.map((cartItem: any) => {
+      setTempSubTotal1(tempsubtotal1 + (cartItem.quantity * cartItem.price))
+      
+      return {};
+    });
+
+    return productsFromCartFile;
+  }, []);
+
+
+  useEffect(() => {
+    const loadData = async () => {
+      await loadCartFromFile();
+  
+    };
+  
+    loadData();
+    setTempSubTotal(subtotal);
+    setTotal(total);
+  }, [loadCartFromFile, tempsubtotal1, subtotal, total]);
+
+
+
 
   return (
     <div className="p-4 sm:p-8">
@@ -89,7 +139,7 @@ function OrderView({ order, language, settings, loadingStatus }: any) {
                 <h3 className="mb-2 text-sm font-semibold text-heading">
                   {t('text-total')}
                 </h3>
-                <p className="text-sm text-body-dark">{total}</p>
+                <p className="text-sm text-body-dark">{tempTotal}</p>
               </div>
 
               <div className="rounded border border-border-200 px-5 py-4 shadow-sm">
@@ -123,7 +173,7 @@ function OrderView({ order, language, settings, loadingStatus }: any) {
                       {t('text-sub-total')} :
                     </strong>
                     <span className="w-7/12 text-sm ltr:pl-4 rtl:pr-4 sm:w-8/12 ">
-                      {sub_total}
+                      {tempsubtotal}
                     </span>
                   </p>
                   <p className="mt-5 flex text-body-dark">
@@ -155,7 +205,7 @@ function OrderView({ order, language, settings, loadingStatus }: any) {
                       {t('text-total')} :
                     </strong>
                     <span className="w-7/12 text-sm ltr:pl-4 rtl:pr-4 sm:w-8/12">
-                      {total}
+                      {tempTotal}
                     </span>
                   </p>
                   {order?.wallet_point?.amount! && (
@@ -202,7 +252,7 @@ function OrderView({ order, language, settings, loadingStatus }: any) {
                       {t('text-total-item')} :
                     </strong>
                     <span className="w-8/12 text-sm ltr:pl-4 rtl:pr-4 ">
-                      {formatString(order?.products?.length, t('text-item'))}
+                      {formatString(cartLength, t('text-item'))}
                     </span>
                   </p>
                   {!isEmpty(order?.delivery_time) && (

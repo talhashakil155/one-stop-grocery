@@ -116,23 +116,23 @@ const Maintenance = ({ children }: MaintenanceProps) => {
 
   // Use useCallback to avoid creating new functions on every render
   const handleReviewPopup = useCallback(() => {
-    if (
-      me &&
-      me?.last_order &&
-      isEmpty(me?.last_order?.reviews) &&
-      Boolean(settings?.enableReviewPopup) &&
-      !underMaintenanceStart &&
-      !AccessAdminRoles &&
-      !Boolean(seenReviewPopup) &&
-      Boolean(seenPopup)
-    ) {
-      let timer = setTimeout(() => {
-        openModal('REVIEW_POPUP_MODAL', {
-          tracking_number: me?.last_order?.tracking_number,
-        });
-      }, Number(5000));
-      return () => clearTimeout(timer);
-    }
+    // if (
+    //   me &&
+    //   me?.last_order &&
+    //   isEmpty(me?.last_order?.reviews) &&
+    //   Boolean(settings?.enableReviewPopup) &&
+    //   !underMaintenanceStart &&
+    //   !AccessAdminRoles &&
+    //   !Boolean(seenReviewPopup) &&
+    //   Boolean(seenPopup)
+    // ) {
+    //   let timer = setTimeout(() => {
+    //     openModal('REVIEW_POPUP_MODAL', {
+    //       tracking_number: me?.last_order?.tracking_number,
+    //     });
+    //   }, Number(5000));
+    //   return () => clearTimeout(timer);
+    // }
   }, [
     seenReviewPopup,
     underMaintenanceStart,

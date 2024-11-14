@@ -14,6 +14,7 @@ import {
 } from '@/lib/get-review';
 import { OrderStatus, Product } from '@/types';
 import classNames from 'classnames';
+import { useCallback, useEffect, useState } from 'react';
 
 //FIXME: need to fix this usePrice hooks issue within the table render we may check with nested property
 const OrderItemList = (_: any, record: any) => {
@@ -78,6 +79,7 @@ export const OrderItems = ({
   const { t } = useTranslation('common');
   const { alignLeft, alignRight } = useIsRTL();
   const { openModal } = useModalAction();
+  const [finalData, setFinalData] = useState<Product[] | undefined>(undefined)
 
   const orderTableColumns = [
     {
@@ -196,12 +198,84 @@ export const OrderItems = ({
     },
   ];
 
+  const loadCartFromFile = useCallback(async () => {
+    const response = await fetch('/api/cart/load-cart');
+    const cartItems = await response.json();
+    const productsFromCartFile: Product[] = await cartItems.map((cartItem: any) => ({
+      id: cartItem.id,
+      name: cartItem.name,
+      slug: cartItem.slug,
+      is_digital: cartItem.digital,
+      price: cartItem.price,
+      image: {
+        "id": 208,
+        "original": cartItem.image,
+        "thumbnail": cartItem.image
+      },
+      shop: cartItem.shop_id,
+      unit: cartItem.unit,
+      quantity: cartItem.quantity,
+      total_price: cartItem.itemTotal,
+
+      description: "Chocolate is a usually sweet, brown food preparation of roasted and ground cacao seeds that is made in the form of a liquid, paste, or in a block, or used as a flavoring ingredient in other foods.",
+      "type_id": 1,
+      "sale_price": 3.5,
+      "language": "en",
+      "min_price": 5,
+      "max_price": 5,
+      "sku": "1518",
+      "sold_quantity": 0,
+      "in_stock": 1,
+      "is_taxable": 0,
+      "shipping_class_id": null,
+      "status": "publish",
+      "product_type": "simple",
+      "height": null,
+      "width": null,
+      "length": null,
+      "gallery": [],
+      "deleted_at": null,
+      "created_at": "2021-03-11T06:39:46.000000Z",
+      "updated_at": "2023-10-06T06:19:56.000000Z",
+      "author_id": null,
+      "manufacturer_id": null,
+      is_external: false,
+      external_product_url: "",
+      "external_product_button_text": "",
+      "blocked_dates": [],
+      "ratings": 0,
+      "total_reviews": 0,
+      "rating_count": [],
+      "my_review": null,
+      "in_wishlist": false,
+      "translated_languages": ["en"],
+      "pivot": {
+        "order_id": 48,
+        "product_id": cartItem.id,
+        "order_quantity": cartItem.quantity,
+        "unit_price": cartItem.unit,
+        "subtotal": cartItem.itemTotal,
+        "variation_option_id": null,
+        "created_at": "2024-02-07T01:08:38.000000Z",
+        "updated_at": "2024-02-07T01:08:38.000000Z"
+      },
+      "variation_options": []
+    }));
+
+    setFinalData(productsFromCartFile)
+    return productsFromCartFile;
+  }, []);
+
+  useEffect(() => {
+    loadCartFromFile();
+  }, [loadCartFromFile]);
+
   return (
     <Table
       //@ts-ignore
       columns={orderTableColumns}
       //@ts-ignore
-      data={products as Product}
+      data={finalData}
       rowKey={(record: any) =>
         record.pivot?.variation_option_id
           ? record.pivot.variation_option_id

@@ -19,6 +19,8 @@ import { PaymentGateway } from '@/types';
 import { useSettings } from '@/framework/settings';
 import Cookies from 'js-cookie';
 import { REVIEW_POPUP_MODAL_KEY } from '@/lib/constants';
+import UnverifiedItemList from './item/unverified-item-list';
+import { OrderStatus, Product } from '@/types';
 
 export const PlaceOrderAction: React.FC<{
   className?: string;
@@ -71,7 +73,18 @@ export const PlaceOrderAction: React.FC<{
     },
     Number(discount),
   );
+
+  const placeItemsInCartFile = async () => {
+    await fetch('/api/cart/save-cart', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(items),
+    });
+  };
+
   const handlePlaceOrder = () => {
+    placeItemsInCartFile()
+
     if (!customer_contact) {
       setErrorMessage('Contact Number Is Required');
       return;
