@@ -72,14 +72,13 @@ function OrderView({ order, language, settings, loadingStatus }: any) {
     const response = await fetch('/api/cart/load-cart');
     const cartItems = await response.json();
     setCartLength(cartItems.length)
-    
-    const productsFromCartFile = await cartItems.map((cartItem: any) => {
-      setTempSubTotal1(tempsubtotal1 + (cartItem.quantity * cartItem.price))
-      
-      return {};
-    });
 
-    return productsFromCartFile;
+    const calculatedSubtotal = await cartItems.reduce((sum: number, cartItem: any) => {
+      return sum + (cartItem.quantity * cartItem.price);
+    }, 0);
+
+    setTempSubTotal1(calculatedSubtotal);
+    return {};
   }, []);
 
 
@@ -92,7 +91,7 @@ function OrderView({ order, language, settings, loadingStatus }: any) {
     loadData();
     setTempSubTotal(subtotal);
     setTotal(total);
-  }, [loadCartFromFile, tempsubtotal1, subtotal, total]);
+  }, [loadCartFromFile, subtotal, total]);
 
 
 
