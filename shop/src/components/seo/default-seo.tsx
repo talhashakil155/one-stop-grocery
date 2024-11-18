@@ -31,9 +31,9 @@ const DefaultSeo = () => {
       ]}
       title={settings?.seo?.metaTitle}
       titleTemplate={`${
-        settings?.seo?.metaTitle || settings?.siteTitle || 'E-Commerce'
+        settings?.seo?.metaTitle || settings?.siteTitle || 'One Stop Grocery'
       } | %s`}
-      defaultTitle="PickBazar"
+      defaultTitle="One Stop Grocery"
       description={settings?.seo?.metaDescription || settings?.siteSubtitle}
       canonical={settings?.seo?.canonicalUrl}
       openGraph={{

@@ -1,5 +1,19 @@
 [
   {
+    "id": 3,
+    "name": "Blueberries",
+    "slug": "blueberries",
+    "unit": "1lb",
+    "is_digital": 0,
+    "image": "https://pickbazarlaravel.s3.ap-southeast-1.amazonaws.com/3/conversions/blueberries-thumbnail.jpg",
+    "stock": 30,
+    "price": 3,
+    "language": "en",
+    "shop_id": 6,
+    "quantity": 1,
+    "itemTotal": 3
+  },
+  {
     "id": 2,
     "name": "Baby Spinach",
     "slug": "baby-spinach",
