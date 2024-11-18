@@ -24,10 +24,13 @@ const ProfileForm = ({ user }: { user: User }) => {
         id: user?.profile?.id,
         bio: values?.profile?.bio ?? '',
         //@ts-ignore
-        avatar: values?.profile?.avatar?.[0],
+        // avatar: values?.profile?.avatar?.[0],
+        avatar: "/img/cover-images/me-avatar.png",
       },
     });
+    console.log("avatar: ", values?.profile?.avatar)
   }
+
 
   return (
     <Form<UpdateUserInput>

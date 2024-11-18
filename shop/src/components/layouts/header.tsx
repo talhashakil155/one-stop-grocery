@@ -181,7 +181,7 @@ const Header = ({ layout }: { layout?: string }) => {
         >
           Map
         </button> */}
-            <div className="flex shrink-0 items-center space-x-7 rtl:space-x-reverse 2xl:space-x-10">
+            <div className="flex shrink-0 items-center rtl:space-x-reverse 2xl:space-x-10">
               <ul className="hidden shrink-0 items-center space-x-7 rtl:space-x-reverse xl:flex 2xl:space-x-10">
                 <StaticMenu />
               </ul>

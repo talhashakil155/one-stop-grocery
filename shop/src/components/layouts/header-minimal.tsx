@@ -111,7 +111,7 @@ const HeaderMinimal = ({ layout }: { layout: string }) => {
             ''
           )} */}
 
-            <div className="hidden shrink-0 items-center space-x-7 ltr:ml-10 ltr:mr-auto rtl:mr-10 rtl:ml-auto rtl:space-x-reverse lg:flex 2xl:space-x-10">
+            <div className="hidden shrink-0 items-center ltr:ml-10 ltr:mr-auto rtl:mr-10 rtl:ml-auto rtl:space-x-reverse lg:flex 2xl:space-x-10">
               <ul className="hidden shrink-0 items-center space-x-7 rtl:space-x-reverse xl:flex 2xl:space-x-10">
                 <StaticMenu />
               </ul>

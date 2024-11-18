@@ -16,7 +16,7 @@ const Logo: React.FC<React.AnchorHTMLAttributes<{}>> = ({
       <span className="relative h-[2.125rem] w-32 overflow-hidden md:w-[8.625rem]">
         <Image
           src="/img/one-step-grocery-logo4.png"
-          alt={siteTitle || 'PickBazar Logo'}
+          alt={siteTitle || 'One Stop Grocery Logo'}
           fill
           sizes="(max-width: 768px) 100vw"
           loading="eager"
